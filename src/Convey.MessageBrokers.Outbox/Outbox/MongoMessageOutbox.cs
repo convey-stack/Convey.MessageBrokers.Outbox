@@ -18,9 +18,10 @@ namespace Convey.MessageBrokers.Outbox.Outbox
         {
             var outboxMessage = new OutboxMessage
             {
+                Id = Guid.NewGuid(),
                 MessageId = Guid.NewGuid(),
                 SerializedMessage = JsonConvert.SerializeObject(message),
-                Type = message.GetType().FullName,
+                Type = message.GetType().AssemblyQualifiedName,
                 SentAt = DateTime.UtcNow
             };
             await _repository.AddAsync(outboxMessage);
