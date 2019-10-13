@@ -9,7 +9,7 @@
     <Title>Convey.MessageBrokers.Outbox</Title>
     <PackageId>Convey.MessageBrokers.Outbox</PackageId>
     <PackageTags>Convey.MessageBrokers.Outbox</PackageTags>
-    <LangVersion>8</LangVersion>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(Configuration)' == 'Debug'">
