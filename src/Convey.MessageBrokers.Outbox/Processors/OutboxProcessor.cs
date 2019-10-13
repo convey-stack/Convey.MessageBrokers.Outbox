@@ -9,9 +9,9 @@ namespace Convey.MessageBrokers.Outbox.Processors
     internal sealed class OutboxProcessor : IHostedService
     {
         private readonly IMessageOutboxAccessor _outbox;
-        private readonly IPublisher _publisher;
+        private readonly IBusPublisher _publisher;
 
-        public OutboxProcessor(IMessageOutbox outbox, IPublisher publisher)
+        public OutboxProcessor(IMessageOutbox outbox, IBusPublisher publisher)
         {
             _outbox = outbox as IMessageOutboxAccessor;
             _publisher = publisher;
