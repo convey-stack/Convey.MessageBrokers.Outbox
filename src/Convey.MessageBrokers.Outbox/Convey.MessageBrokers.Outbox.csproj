@@ -21,8 +21,7 @@
   <ItemGroup Condition="'$(Configuration)' == 'Release'">
     <PackageReference Include="Convey" Version="0.0.*" />
     <PackageReference Include="Convey.MessageBrokers" Version="0.0.*" />
-    <PackageReference Include="Convey.MessageBrokers.Persistence.MongoDB" Version="0.0.*" />
-
+    <PackageReference Include="Convey.Persistence.MongoDB" Version="0.0.*" />
   </ItemGroup>
 
   <ItemGroup>
